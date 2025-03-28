@@ -1,0 +1,20 @@
+digraph graph_name {
+	
+	ranksep=0.03;
+    graph [compound=true, fontname = "Meiryo UI", style="invis" margin=0, nodesep  = 0.5];
+	rank="same"
+    node [fontname = "Meiryo UI"];
+    edge [fontname = "Meiryo UI"];
+    bgcolor = "#F2F2F2";
+	
+
+	1 [label= "START
+int func(int a, int b)"shape= box, shape = ellipse  ,style= "solid,filled" fillcolor= "#FFFFFF",color="#000000", width= 3.18571428571429,height= 0.571428571428571];
+	2 [label= "return (a+b)"shape= box, shape = box3d ,style= "solid,filled" fillcolor= "#FFFFFF",color="#000000", width= 1.68571428571429,height= 0.285714285714286];
+	3 [label= "END"shape= box, shape = ellipse  ,style= "solid,filled" fillcolor= "#FFFFFF",color="#000000", width= 2,height= 0.571428571428571];
+	13 [label= "a와 b의 합 구하기\l"shape= box, shape = none ,style= "solid,filled" fillcolor= "#BBCCFF",color="#000000", width= 2.03714285714286,height= 0.214285714285714];
+
+ 1 -> 2 [ label = "",arrowhead  = normal,color = "#000000"];
+ 2 -> 3 [ label = "",arrowhead  = normal,color = "#000000"];
+{rank=same; 1 -> 13 [ label = "",arrowhead  = none,color = "#AAAAFF"];}
+}
